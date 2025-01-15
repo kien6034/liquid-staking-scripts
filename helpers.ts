@@ -248,19 +248,19 @@ export function createLCDClient(network: string): LCDClient {
 export async function createWallet(terra: LCDClient, keyName: string, keyDir: string): Promise<Wallet> {
   if (keyName === "ledger") {
     const lk = await LedgerKey.create({
-      transport: await TransportNodeHid.create(60 * 1000),
+      transport: () => TransportNodeHid.create(60 * 1000),
     });
     return terra.wallet(lk as any);
   }
   if (keyName === "ledger-classic") {
     const lk = await LedgerKey.create({
-      transport: await TransportNodeHid.create(60 * 1000),
+      transport: () => TransportNodeHid.create(60 * 1000),
     });
     return terra.wallet(lk as any);
   }
   if (keyName === "ledger-juno") {
     const lk = await LedgerKey.create({
-      transport: await TransportNodeHid.create(60 * 1000),
+      transport: () => TransportNodeHid.create(60 * 1000),
       coinType: 118,
     });
     return terra.wallet(lk as any);

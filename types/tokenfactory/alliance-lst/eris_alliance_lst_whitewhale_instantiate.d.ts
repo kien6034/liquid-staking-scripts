@@ -88,4 +88,6 @@ export interface InstantiateMsg {
    * Specifies a validators proxy contract, so that validators are not locally stored
    */
   validator_proxy: string;
+  whale_btc_pool: string;
+  btc_denom: string;
 }
