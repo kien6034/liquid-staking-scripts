@@ -48,6 +48,7 @@ export type DelegationStrategyFor_String =
 export type Decimal = string;
 
 export interface InstantiateMsg {
+  whale_denom: string;
   /**
    * Strategy how delegations should be handled
    */

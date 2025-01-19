@@ -73,6 +73,7 @@ const templates: Partial<Record<Chains, InstantiateMsg>> = {
     validator_proxy: "migaloo1436kxs0w2es6xlqpp9rd35e3d0cjnw4sv8j3a7483sgks29jqwgshqdky4",
     whale_btc_pool: "migaloo1axtz4y7jyvdkkrflknv9dcut94xr5k8m6wete4rdrw4fuptk896su44x2z",
     btc_denom: "ibc/6E5BF71FE1BEBBD648C8A7CB7A790AEF0081120B2E5746E6563FC95764716D61",
+    whale_denom: "uwhale",
   },
 };
 
